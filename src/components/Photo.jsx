@@ -1,6 +1,7 @@
-import styles from '../styles/photo'
+import styles from '../styles/photoList'
 
 import React from 'react'
+import classNames from 'classnames'
 import { Link, withRouter } from 'react-router'
 
 import { STACK_FILES_DOWNLOAD_PATH } from '../constants/config'
@@ -8,8 +9,11 @@ import { STACK_FILES_DOWNLOAD_PATH } from '../constants/config'
 export const Photo = ({ photo, selected = false, onToggle, router }) => {
   const parentPath = router.location.pathname
   return (
-    <div>
-      <span data-input='checkbox'>
+    <div className={classNames(
+      styles['pho-photo'],
+      { [styles['pho-photo--selected']]: selected }
+    )}>
+      <span className={styles['pho-photo-select']} data-input='checkbox'>
         <input
           type='checkbox'
           checked={selected}
