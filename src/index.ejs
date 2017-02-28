@@ -15,4 +15,14 @@
 <% _.forEach(htmlWebpackPlugin.files.js, function(file) { %>
   <script src="<%- file %>" defer></script>
 <% }); %>
-<div role="application" data-token="{{.Token}}" data-cozy-stack="{{.Domain}}">
+{{.CozyClientJS}}
+{{.CozyBar}}
+</head>
+<div
+  role="application"
+  data-cozy-token="{{.Token}}"
+  data-cozy-domain="{{.Domain}}"
+  data-cozy-locale="{{.Locale}}"
+  data-cozy-app-name="{{.AppName}}"
+  data-cozy-icon-path="{{.IconPath}}"
+>
