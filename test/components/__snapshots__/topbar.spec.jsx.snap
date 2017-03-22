@@ -1,25 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Topbar component should be rendered correctly according the viewName 1`] = `
 <div
-  className="pho-content-header">
+  className="pho-content-header"
+>
   <h2
-    className="pho-content-title">
+    className="pho-content-title"
+  >
     Photos
   </h2>
   <Connect(_translate)
-    viewName="photos" />
+    viewName="photos"
+  />
 </div>
 `;
 
 exports[`Topbar component should be rendered correctly if viewName is albumContent 1`] = `
 <div
-  className="pho-content-header">
+  className="pho-content-header"
+>
   <div
     className="pho-content-album-previous"
     onClick={[Function]}
-    role="button" />
+    role="button"
+  />
   <h2
-    className="pho-content-title" />
+    className="pho-content-title"
+  />
   <Connect(_translate)
-    viewName="albumContent" />
+    viewName="albumContent"
+  />
 </div>
 `;

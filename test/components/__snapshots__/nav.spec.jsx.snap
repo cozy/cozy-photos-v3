@@ -1,26 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Nav component should be rendered correctly 1`] = `
 <nav>
   <ul
-    className="coz-nav">
+    className="coz-nav"
+  >
     <li
-      className="coz-nav-item">
+      className="coz-nav-item"
+    >
       <Link
         activeClassName="active"
         className="pho-cat-photos coz-nav-link"
-        onlyActiveOnIndex={false}
-        style={Object {}}
-        to="/photos">
+        replace={false}
+        to="/photos"
+      >
         Photos
       </Link>
     </li>
     <li
-      className="coz-nav-item">
+      className="coz-nav-item"
+    >
       <Link
         activeClassName="active"
         className="pho-cat-albums coz-nav-link"
-        onlyActiveOnIndex={false}
-        style={Object {}}
-        to="/albums">
+        replace={false}
+        to="/albums"
+      >
         Albums
       </Link>
     </li>

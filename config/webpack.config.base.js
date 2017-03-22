@@ -30,10 +30,13 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: extractor.extract('style', [
-          'css-loader?importLoaders=1',
-          'postcss-loader'
-        ])
+        loader: extractor.extract({
+          fallback: 'style',
+          use: [
+            'css-loader?importLoaders=1',
+            'postcss-loader'
+          ]
+        })
       }
     ]
   },

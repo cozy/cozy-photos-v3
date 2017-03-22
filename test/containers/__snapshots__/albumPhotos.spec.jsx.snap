@@ -1,10 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`AlbumPhotos component should be rendered correctly 1`] = `
 <div>
   <_translate
     albumName="albumTest"
-    viewName="albumContent" />
+    viewName="albumContent"
+  />
   <Connect(_translate)
     fetchPhotoLists={[Function]}
-    photosContext="album" />
+    photosContext="album"
+  />
 </div>
 `;

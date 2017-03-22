@@ -1,9 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`AlbumsView component should be rendered correctly with error view if error 1`] = `
 <_translate
-  loadingType="albums_fetching" />
+  loadingType="albums_fetching"
+/>
 `;
 
 exports[`AlbumsView component should be rendered correctly with loading view if isFetching 1`] = `
 <_translate
-  loadingType="albums_fetching" />
+  loadingType="albums_fetching"
+/>
 `;

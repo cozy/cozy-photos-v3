@@ -8,6 +8,8 @@
 [Cozy] Photos
 =======================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cozy/cozy-photos-v3.svg)](https://greenkeeper.io/)
+
 
 What's Cozy?
 ------------
