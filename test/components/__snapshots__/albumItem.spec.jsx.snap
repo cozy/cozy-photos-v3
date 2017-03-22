@@ -6,8 +6,9 @@ exports[`AlbumItem component should be displayed correctly if album without phot
 <div
   className="pho-album"
 >
-  <Unknown
+  <Link
     className="pho-album-link"
+    replace={false}
     to="/mock/33dda00f0eec15bc3b3c59a615001ac8"
   >
     <img
@@ -27,7 +28,7 @@ exports[`AlbumItem component should be displayed correctly if album without phot
     >
       0 photos
     </h4>
-  </Unknown>
+  </Link>
 </div>
 `;
 

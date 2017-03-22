@@ -8,24 +8,26 @@ exports[`Nav component should be rendered correctly 1`] = `
     <li
       className="coz-nav-item"
     >
-      <Unknown
+      <Link
         activeClassName="active"
         className="pho-cat-photos coz-nav-link"
+        replace={false}
         to="/photos"
       >
         Photos
-      </Unknown>
+      </Link>
     </li>
     <li
       className="coz-nav-item"
     >
-      <Unknown
+      <Link
         activeClassName="active"
         className="pho-cat-albums coz-nav-link"
+        replace={false}
         to="/albums"
       >
         Albums
-      </Unknown>
+      </Link>
     </li>
   </ul>
 </nav>

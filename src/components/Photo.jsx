@@ -2,7 +2,7 @@ import styles from '../styles/photoList'
 
 import React, { Component } from 'react'
 import classNames from 'classnames'
-import { Link, withRouter } from 'react-router'
+import { Link, withRouter } from 'react-router-dom'
 
 import { getPhotoLink } from '../actions/photos'
 

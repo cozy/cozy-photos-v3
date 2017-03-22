@@ -17,7 +17,8 @@ exports[`Photo component should handle onClick event 1`] = `
       />
       <label />
     </span>
-    <Unknown
+    <Link
+      replace={false}
       to="/mock/33dda00f0eec15bc3b3c59a615001ac8"
     >
       <img
@@ -31,7 +32,7 @@ exports[`Photo component should handle onClick event 1`] = `
           }
         }
       />
-    </Unknown>
+    </Link>
   </div>
 </div>
 `;
@@ -60,7 +61,8 @@ exports[`Photo component should render correctly an image according a photo obje
       />
       <label />
     </span>
-    <Unknown
+    <Link
+      replace={false}
       to="/mock/33dda00f0eec15bc3b3c59a615001ac8"
     >
       <img
@@ -74,7 +76,7 @@ exports[`Photo component should render correctly an image according a photo obje
           }
         }
       />
-    </Unknown>
+    </Link>
   </div>
 </div>
 `;
