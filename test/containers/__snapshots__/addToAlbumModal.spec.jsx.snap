@@ -1,9 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AddToAlbumModal component should be rendered correctly 1`] = `
-<Unknown
+<Modal
+  cancelType="secondary"
+  primaryType="secondary"
   secondaryAction={[Function]}
   title="Add to album"
+  withCross={true}
 >
   <div
     className="coz-modal-section coz-create-album"
@@ -12,5 +15,5 @@ exports[`AddToAlbumModal component should be rendered correctly 1`] = `
       onSubmitNewAlbum={[Function]}
     />
   </div>
-</Unknown>
+</Modal>
 `;
