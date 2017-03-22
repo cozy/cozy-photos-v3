@@ -1,11 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`AddToAlbumModal component should be rendered correctly 1`] = `
 <Unknown
   secondaryAction={[Function]}
-  title="Add to album">
+  title="Add to album"
+>
   <div
-    className="coz-modal-section coz-create-album">
+    className="coz-modal-section coz-create-album"
+  >
     <_translate
-      onSubmitNewAlbum={[Function]} />
+      onSubmitNewAlbum={[Function]}
+    />
   </div>
 </Unknown>
 `;

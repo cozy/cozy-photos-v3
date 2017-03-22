@@ -1,7 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`PhotoList component should render correctly a timeline of photos according a photos array 1`] = `
 <div
   className="pho-section"
-  style="">
+  style=""
+>
   <h3>
     Photo list title
   </h3>
@@ -29,14 +32,16 @@ exports[`PhotoList component should render correctly a timeline of photos accord
         "updated_at": "0001-01-01T00:00:00Z",
       }
     }
-    selected={false} />
+    selected={false}
+  />
 </div>
 `;
 
 exports[`PhotoList component should render correctly if some photos are selected 1`] = `
 <div
   className="pho-section pho-section--has-selection"
-  style="">
+  style=""
+>
   <h3>
     Photo list title
   </h3>
@@ -64,14 +69,16 @@ exports[`PhotoList component should render correctly if some photos are selected
         "updated_at": "0001-01-01T00:00:00Z",
       }
     }
-    selected={false} />
+    selected={false}
+  />
 </div>
 `;
 
 exports[`PhotoList component should render correctly when a containerWidth is given 1`] = `
 <div
   className="pho-section"
-  style="width:1800px">
+  style="width:1800px"
+>
   <h3>
     Empty list
   </h3>
@@ -99,6 +106,7 @@ exports[`PhotoList component should render correctly when a containerWidth is gi
         "updated_at": "0001-01-01T00:00:00Z",
       }
     }
-    selected={false} />
+    selected={false}
+  />
 </div>
 `;

@@ -1,34 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`PhotoBoard component should render correctly a loading view if isFetching is true 1`] = `
 <div
   className=""
-  role="contentinfo">
+  role="contentinfo"
+>
   <_translate
-    loadingType="photos_fetching" />
+    loadingType="photos_fetching"
+  />
 </div>
 `;
 
 exports[`PhotoBoard component should render correctly a loading view if isIndexing is true 1`] = `
 <div
   className=""
-  role="contentinfo">
+  role="contentinfo"
+>
   <_translate
-    loadingType="photos_indexing" />
+    loadingType="photos_indexing"
+  />
 </div>
 `;
 
 exports[`PhotoBoard component should render correctly a loading view if isWorking is true 1`] = `
 <div
   className=""
-  role="contentinfo">
+  role="contentinfo"
+>
   <_translate
-    loadingType="photos_upload" />
+    loadingType="photos_upload"
+  />
 </div>
 `;
 
 exports[`PhotoBoard component should render correctly a timeline of photos according a photos array 1`] = `
 <div
   className=""
-  role="contentinfo">
+  role="contentinfo"
+>
   <DimensionsHOC
     onPhotoToggle={undefined}
     photos={
@@ -44,14 +53,16 @@ exports[`PhotoBoard component should render correctly a timeline of photos accor
       ]
     }
     selected={Array []}
-    title="2017-01-01" />
+    title="2017-01-01"
+  />
 </div>
 `;
 
 exports[`PhotoBoard component should render correctly a timeline of photos according a photos array in album context 1`] = `
 <div
   className=""
-  role="contentinfo">
+  role="contentinfo"
+>
   <DimensionsHOC
     onPhotoToggle={undefined}
     photos={
@@ -67,15 +78,18 @@ exports[`PhotoBoard component should render correctly a timeline of photos accor
       ]
     }
     selected={Array []}
-    title="2017-01-01" />
+    title="2017-01-01"
+  />
 </div>
 `;
 
 exports[`PhotoBoard component should render correctly an empty view if photos is empty 1`] = `
 <div
   className=""
-  role="contentinfo">
+  role="contentinfo"
+>
   <_translate
-    emptyType="timeline_photos" />
+    emptyType="timeline_photos"
+  />
 </div>
 `;

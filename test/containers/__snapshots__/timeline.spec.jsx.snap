@@ -1,22 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Timeline component should be rendered correctly with params if params from router provided 1`] = `
 <div>
   <_translate
-    viewName="photos" />
+    viewName="photos"
+  />
   <Connect(_translate)
     fetchPhotoLists={[Function]}
     photosContext="timeline"
-    refetch={false} />
+    refetch={false}
+  />
 </div>
 `;
 
 exports[`Timeline component should be rendered correctly without store 1`] = `
 <div>
   <_translate
-    viewName="photos" />
+    viewName="photos"
+  />
   <Connect(_translate)
     fetchPhotoLists={[Function]}
     photosContext="timeline"
-    refetch={false} />
+    refetch={false}
+  />
 </div>
 `;
 
@@ -34,7 +40,8 @@ exports[`Timeline component should have correct connected provided props 1`] = `
       "replaceReducer": [Function],
       "subscribe": [Function],
     }
-  } />
+  }
+/>
 `;
 
 exports[`Timeline component should render correctly if it has correct connected provided props 1`] = `
@@ -53,5 +60,6 @@ exports[`Timeline component should render correctly if it has correct connected 
       "subscribe": [Function],
     }
   }
-  t={undefined} />
+  t={undefined}
+/>
 `;

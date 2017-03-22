@@ -1,13 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`CreateAlbumForm component should be displayed correctly 1`] = `
 <form
   className="pho-create-album-form"
-  onSubmit={[Function]}>
+  onSubmit={[Function]}
+>
   <label
-    className="coz-create-album-label">
+    className="coz-create-album-label"
+  >
     Create a new album
   </label>
   <div
-    className="coz-inline-form">
+    className="coz-inline-form"
+  >
     <input
       className="coz-input-text"
       disabled={false}
@@ -15,11 +20,13 @@ exports[`CreateAlbumForm component should be displayed correctly 1`] = `
       onInput={[Function]}
       placeholder="New album name"
       type="text"
-      value="" />
+      value=""
+    />
     <button
       aria-busy={false}
       className="coz-btn coz-btn--regular coz-btn"
-      disabled={true}>
+      disabled={true}
+    >
       Create
     </button>
   </div>
@@ -29,13 +36,16 @@ exports[`CreateAlbumForm component should be displayed correctly 1`] = `
 exports[`CreateAlbumForm component should handle correctly form submit with error 1`] = `
 <form
   className="pho-create-album-form"
-  onSubmit={[Function]}>
+  onSubmit={[Function]}
+>
   <label
-    className="coz-create-album-label">
+    className="coz-create-album-label"
+  >
     Create a new album
   </label>
   <div
-    className="coz-inline-form">
+    className="coz-inline-form"
+  >
     <input
       className="coz-input-text"
       disabled={true}
@@ -43,11 +53,13 @@ exports[`CreateAlbumForm component should handle correctly form submit with erro
       onInput={[Function]}
       placeholder="New album name"
       type="text"
-      value="test" />
+      value="test"
+    />
     <button
       aria-busy={true}
       className="coz-btn coz-btn--regular coz-btn"
-      disabled={true}>
+      disabled={true}
+    >
       Create
     </button>
   </div>
@@ -57,13 +69,16 @@ exports[`CreateAlbumForm component should handle correctly form submit with erro
 exports[`CreateAlbumForm component should handle correctly form submit with success 1`] = `
 <form
   className="pho-create-album-form"
-  onSubmit={[Function]}>
+  onSubmit={[Function]}
+>
   <label
-    className="coz-create-album-label">
+    className="coz-create-album-label"
+  >
     Create a new album
   </label>
   <div
-    className="coz-inline-form">
+    className="coz-inline-form"
+  >
     <input
       className="coz-input-text"
       disabled={true}
@@ -71,11 +86,13 @@ exports[`CreateAlbumForm component should handle correctly form submit with succ
       onInput={[Function]}
       placeholder="New album name"
       type="text"
-      value="test" />
+      value="test"
+    />
     <button
       aria-busy={true}
       className="coz-btn coz-btn--regular coz-btn"
-      disabled={true}>
+      disabled={true}
+    >
       Create
     </button>
   </div>
@@ -85,13 +102,16 @@ exports[`CreateAlbumForm component should handle correctly form submit with succ
 exports[`CreateAlbumForm component should handle correctly input change 1`] = `
 <form
   className="pho-create-album-form"
-  onSubmit={[Function]}>
+  onSubmit={[Function]}
+>
   <label
-    className="coz-create-album-label">
+    className="coz-create-album-label"
+  >
     Create a new album
   </label>
   <div
-    className="coz-inline-form">
+    className="coz-inline-form"
+  >
     <input
       className="coz-input-text"
       disabled={false}
@@ -99,11 +119,13 @@ exports[`CreateAlbumForm component should handle correctly input change 1`] = `
       onInput={[Function]}
       placeholder="New album name"
       type="text"
-      value="test" />
+      value="test"
+    />
     <button
       aria-busy={false}
       className="coz-btn coz-btn--regular coz-btn"
-      disabled={false}>
+      disabled={false}
+    >
       Create
     </button>
   </div>

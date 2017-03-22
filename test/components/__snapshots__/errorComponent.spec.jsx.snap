@@ -1,14 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Empty component should be displayed with albums text if errorType is albums 1`] = `
 <div>
   <div
-    className="pho-error">
+    className="pho-error"
+  >
     <h2>
       An error occurred while retrieving the albums list. Please try again later.
     </h2>
     <button
       className="coz-btn coz-btn--regular"
       onClick={[Function]}
-      role="button">
+      role="button"
+    >
       Refresh now
     </button>
   </div>
@@ -18,14 +22,16 @@ exports[`Empty component should be displayed with albums text if errorType is al
 exports[`Empty component should be displayed with photos text if errorType is album_photos 1`] = `
 <div>
   <div
-    className="pho-error">
+    className="pho-error"
+  >
     <h2>
-      An error occurred while retrieving the album\'s photos list. Please try again later.
+      An error occurred while retrieving the album's photos list. Please try again later.
     </h2>
     <button
       className="coz-btn coz-btn--regular"
       onClick={[Function]}
-      role="button">
+      role="button"
+    >
       Refresh now
     </button>
   </div>
@@ -35,14 +41,16 @@ exports[`Empty component should be displayed with photos text if errorType is al
 exports[`Empty component should be displayed with photos text if errorType is timeline_photos 1`] = `
 <div>
   <div
-    className="pho-error">
+    className="pho-error"
+  >
     <h2>
       An error occurred while retrieving the photos list. Please try again later.
     </h2>
     <button
       className="coz-btn coz-btn--regular"
       onClick={[Function]}
-      role="button">
+      role="button"
+    >
       Refresh now
     </button>
   </div>
@@ -59,14 +67,16 @@ ShallowWrapper {
   "length": 1,
   "node": <div>
     <div
-        className="pho-error">
+        className="pho-error"
+    >
         <h2>
             An error occurred while retrieving the albums list. Please try again later.
         </h2>
         <button
             className="coz-btn coz-btn--regular"
             onClick={[Function]}
-            role="button">
+            role="button"
+        >
             Refresh now
         </button>
     </div>
@@ -74,14 +84,16 @@ ShallowWrapper {
   "nodes": Array [
     <div>
       <div
-            className="pho-error">
+            className="pho-error"
+      >
             <h2>
                   An error occurred while retrieving the albums list. Please try again later.
             </h2>
             <button
                   className="coz-btn coz-btn--regular"
                   onClick={[Function]}
-                  role="button">
+                  role="button"
+            >
                   Refresh now
             </button>
       </div>
@@ -95,7 +107,8 @@ ShallowWrapper {
       "_context": Object {},
       "_currentElement": <Unknown
         errorType="albums"
-        t={[Function]} />,
+        t={[Function]}
+/>,
       "_debugID": 7,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -128,14 +141,16 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div>
           <div
-                    className="pho-error">
+                    className="pho-error"
+          >
                     <h2>
                               An error occurred while retrieving the albums list. Please try again later.
                     </h2>
                     <button
                               className="coz-btn coz-btn--regular"
                               onClick={[Function]}
-                              role="button">
+                              role="button"
+                    >
                               Refresh now
                     </button>
           </div>
@@ -143,14 +158,16 @@ ShallowWrapper {
         "_debugID": 8,
         "_renderedOutput": <div>
           <div
-                    className="pho-error">
+                    className="pho-error"
+          >
                     <h2>
                               An error occurred while retrieving the albums list. Please try again later.
                     </h2>
                     <button
                               className="coz-btn coz-btn--regular"
                               onClick={[Function]}
-                              role="button">
+                              role="button"
+                    >
                               Refresh now
                     </button>
           </div>
@@ -168,6 +185,7 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <Unknown
     errorType="albums"
-    t={[Function]} />,
+    t={[Function]}
+/>,
 }
 `;

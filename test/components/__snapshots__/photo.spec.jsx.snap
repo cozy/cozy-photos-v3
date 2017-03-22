@@ -1,21 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Photo component should handle onClick event 1`] = `
 <div
   className="pho-photo"
-  style={Object {}}>
+  style={Object {}}
+>
   <div>
     <span
       className="pho-photo-select"
       data-input="checkbox"
-      onClick={[Function]}>
+      onClick={[Function]}
+    >
       <input
         checked={false}
-        type="checkbox" />
+        type="checkbox"
+      />
       <label />
     </span>
-    <Link
-      onlyActiveOnIndex={false}
-      style={Object {}}
-      to="/mock/33dda00f0eec15bc3b3c59a615001ac8">
+    <Unknown
+      to="/mock/33dda00f0eec15bc3b3c59a615001ac8"
+    >
       <img
         alt="MonImage.jpg"
         className="pho-photo-item"
@@ -25,8 +29,9 @@ exports[`Photo component should handle onClick event 1`] = `
           Object {
             "display": "none",
           }
-        } />
-    </Link>
+        }
+      />
+    </Unknown>
   </div>
 </div>
 `;
@@ -34,27 +39,30 @@ exports[`Photo component should handle onClick event 1`] = `
 exports[`Photo component should handle onLoad img event correctly 1`] = `
 <div
   className="pho-photo"
-  style={Object {}} />
+  style={Object {}}
+/>
 `;
 
 exports[`Photo component should render correctly an image according a photo object and the router path 1`] = `
 <div
   className="pho-photo"
-  style={Object {}}>
+  style={Object {}}
+>
   <div>
     <span
       className="pho-photo-select"
       data-input="checkbox"
-      onClick={[Function]}>
+      onClick={[Function]}
+    >
       <input
         checked={false}
-        type="checkbox" />
+        type="checkbox"
+      />
       <label />
     </span>
-    <Link
-      onlyActiveOnIndex={false}
-      style={Object {}}
-      to="/mock/33dda00f0eec15bc3b3c59a615001ac8">
+    <Unknown
+      to="/mock/33dda00f0eec15bc3b3c59a615001ac8"
+    >
       <img
         alt="MonImage.jpg"
         className="pho-photo-item"
@@ -64,8 +72,9 @@ exports[`Photo component should render correctly an image according a photo obje
           Object {
             "display": "none",
           }
-        } />
-    </Link>
+        }
+      />
+    </Unknown>
   </div>
 </div>
 `;
@@ -77,13 +86,15 @@ exports[`Photo component should render correctly with a box parameter with heigh
     Object {
       "height": "100px",
     }
-  } />
+  }
+/>
 `;
 
 exports[`Photo component should render correctly with a box parameter with no properties 1`] = `
 <div
   className="pho-photo"
-  style={Object {}} />
+  style={Object {}}
+/>
 `;
 
 exports[`Photo component should render correctly with a box parameter with width property set 1`] = `
@@ -93,5 +104,6 @@ exports[`Photo component should render correctly with a box parameter with width
     Object {
       "width": "100px",
     }
-  } />
+  }
+/>
 `;
