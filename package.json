@@ -14,6 +14,9 @@
     "prewatch": "npm run clean",
     "lint": "standard 'src/**/*.js' 'src/**/*.jsx'",
     "test": "node --harmony_proxies node_modules/.bin/jest --coverage",
+    "pretest:visual-regression": "(cd test/specs/ && docker-compose pull && docker-compose up --build -d && sleep 5)",
+    "test:visual-regression": "(cd test/specs/ && ../../node_modules/.bin/wdio wdio.conf.js)",
+    "posttest:visual-regression": "(cd test/specs/ && docker-compose down)",
     "watch": "NODE_ENV=development webpack --config webpack.config.js --watch --display-modules --display-chunks",
     "watch:standalone": "NODE_ENV=development webpack-dev-server --config webpack.config.js --port 8084 --display-modules --display-chunks --inline --hot"
   },
