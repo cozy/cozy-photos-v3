@@ -114,6 +114,9 @@
       "\\.(png|gif|jpe?g|svg)$": "<rootDir>/test/__mocks__/fileMock.js",
       "styles": "identity-obj-proxy"
     },
+    "testPathIgnorePatterns": [
+      "<rootDir>/test/specs"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!cozy-ui)"
     ],
