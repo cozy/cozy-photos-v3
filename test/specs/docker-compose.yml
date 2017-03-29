@@ -1,0 +1,19 @@
+version: '2'
+services:
+  cozy:
+    build: .
+    ports:
+      - "8080:8080"
+      - "5984:5984"
+    volumes:
+      - ../../build:/data/cozy-app
+    stdin_open: true
+    tty: true
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+      - "4444:4444"
+    links:
+      - cozy:cozy.local
+      - cozy:app.cozy.local
+      - cozy:files.cozy.local
