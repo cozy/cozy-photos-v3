@@ -34,3 +34,8 @@ desktop.ini
 
 # Coverage
 coverage/
+
+# Visual regression
+test/specs/__screenshots__/screen/
+test/specs/__screenshots__/diff/
+test/specs/__screenshots__/errorShots/
