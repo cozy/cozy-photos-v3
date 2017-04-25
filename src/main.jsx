@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   cozy.bar.init({
-    appName: 'Photos'
+    appName: 'Photos',
+    replaceTitleOnMobile: true
   })
 
   render((
