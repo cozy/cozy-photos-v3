@@ -67,6 +67,12 @@
       }
     },
     "create": {
+      "panel_form": {
+        "label": "Add a name to your new album",
+        "placeholder": "Untitled album",
+        "cancel": "Cancel",
+        "submit": "Create new album"
+      },
       "inline_form": {
         "placeholder": "New album name",
         "create_label": "Create a new album",

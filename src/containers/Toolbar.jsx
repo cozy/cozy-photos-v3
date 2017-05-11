@@ -86,6 +86,14 @@ export const Toolbar = ({ t, disabled = false, uploadPhotos, deleteAlbum, select
         </Menu>
       </MenuButton>
     ]}
+    {viewName === 'albums' && [
+      <button
+        role='button'
+        className={classNames('coz-btn', 'coz-btn--secondary', styles['pho-btn-new'])}
+      >
+        New album
+      </button>
+    ]}
   </div>
 )
 
