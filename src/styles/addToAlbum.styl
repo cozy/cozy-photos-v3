@@ -6,8 +6,19 @@
     // Should be in Cozy-uy you know
     .coz-modal-section
         width       440px
+        // To remove after next release of Cozy UI
+        padding 1.5em 1.5em
+
+    .coz-modal-section
         border-top 1px solid grey-09
-        padding    1em 1.5em .5em !important
+
+    .coz-modal-section:first-of-type
+            padding-top    1em
+
+    .coz-modal-section
+        &:last-of-type
+            padding-bottom 1.5em
+    // Stop removing here !!!
 
     .coz-select-album
         height 20em
