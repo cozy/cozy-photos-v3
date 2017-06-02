@@ -49,16 +49,16 @@ export class AddToAlbumModal extends Component {
               onSubmitNewAlbum={name => onSubmitNewAlbum(name, photos)}
               />
           </div>
-          {
-            isFetchingAlbums
-            ? <Loading loadingType='albums_fetching' />
-            : albums && albums.entries.length > 0
-            ? <div className={classNames(styles['coz-select-album'])}>
-              <SelectAlbumsForm albums={albums} onSubmitSelectedAlbum={album => onSubmitSelectedAlbum(album, photos)} />
-            </div>
-            : null
-          }
         </ModalSection>
+        {
+          isFetchingAlbums
+          ? <ModalSection><Loading loadingType='albums_fetching' /></ModalSection>
+          : albums && albums.entries.length > 0
+          ? <ModalSection><div className={classNames(styles['coz-select-album'])}>
+            <SelectAlbumsForm albums={albums} onSubmitSelectedAlbum={album => onSubmitSelectedAlbum(album, photos)} />
+          </div></ModalSection>
+          : null
+        }
       </Modal>
     )
   }
