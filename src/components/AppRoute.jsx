@@ -4,6 +4,7 @@ import { Route, Redirect } from 'react-router'
 import Layout from './Layout'
 import Timeline from '../containers/Timeline'
 import AlbumsView from '../containers/AlbumsView'
+import SharedByMeAlbumsView from '../containers/SharedByMeAlbumsView'
 import AlbumPhotos from '../containers/AlbumPhotos'
 import Viewer from '../components/Viewer'
 
@@ -15,6 +16,11 @@ const AppRoute = (
       <Route path=':photoId' component={Viewer} />
     </Route>
     <Route path='albums' component={AlbumsView}>
+      <Route path=':albumId' component={AlbumPhotos}>
+        <Route path=':photoId' component={Viewer} />
+      </Route>
+    </Route>
+    <Route path='sharedbyme' component={SharedByMeAlbumsView}>
       <Route path=':albumId' component={AlbumPhotos}>
         <Route path=':photoId' component={Viewer} />
       </Route>

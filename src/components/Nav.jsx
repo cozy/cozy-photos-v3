@@ -15,7 +15,12 @@ const navigation = [
   {
     iconClass: 'pho-cat-albums',
     labelKey: 'Nav.albums',
-    route: '/abums'
+    route: '/albums'
+  },
+  {
+    iconClass: 'pho-cat-sharedbyme',
+    labelKey: 'Nav.sharedbyme',
+    route: '/sharedbyme'
   }
 ]
 
