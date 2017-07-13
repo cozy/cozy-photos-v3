@@ -56,6 +56,13 @@
         "PUT"
       ]
     },
+    "contacts": {
+      "description": "Required to to share photos with your contacts",
+      "type": "io.cozy.contacts",
+      "methods": [
+        "GET"
+      ]
+    },
     "settings": {
       "description": "Required by the cozy-bar to display Claudy and know which applications are coming soon",
       "type": "io.cozy.settings",
