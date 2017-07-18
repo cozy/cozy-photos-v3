@@ -60,7 +60,8 @@
       "description": "Required to to share photos with your contacts",
       "type": "io.cozy.contacts",
       "methods": [
-        "GET"
+        "GET",
+        "POST"
       ]
     },
     "settings": {
