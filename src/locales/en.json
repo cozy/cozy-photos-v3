@@ -38,7 +38,8 @@
       "photo_upload": "Upload photos",
       "rename_album": "Rename album",
       "album_delete": "Delete album",
-      "download_album": "Download album"
+      "download_album": "Download album",
+      "add_photos": "Add photos to album"
     }
   },
   "Loading": {
@@ -64,7 +65,23 @@
     "delete": "Delete",
     "album-add": "Add to album",
     "album-remove": "Remove from album",
+    "download": "Download",
     "close": "Close"
+  },
+  "Share": {
+    "status": {
+      "pending": "Pending",
+      "accepted": {
+        "master-slave": "Can Read",
+        "master-master": "Can Read and Write"
+      },
+      "refused": "Refused",
+      "error": "Error",
+      "unregistered": "Error",
+      "mail-not-sent": "Error",
+      "revoked": "Error"
+
+    }
   },
   "Albums": {
     "album_item_description": "%{smart_count} photo |||| %{smart_count} photos",
@@ -88,13 +105,11 @@
         "subtitle": "Share by link",
         "desc": "Anyone with the provided link can see and download your photos."
       },
-      "shareByUrl": {
-        "title": "By email & url",
-        "subtitle": "Share by email and url",
+      "shareByEmail": {
+        "title": "By email",
+        "subtitle": "Share by email",
         "email": "email",
-        "url": "cozy address",
-        "emailPlaceholder": "Enter email address of your recipient",
-        "urlPlaceholder": "Enter url address of your recipient",
+        "emailPlaceholder": "Enter email address or name of your recipient",
         "send": "Send",
         "success": "You sent an invite to %{email}."
       },
@@ -103,13 +118,15 @@
         "copy": "Copy",
         "copied": "Copied"
       },
+      "whoHasAccess": {
+        "title": "Who has access"
+      },
       "protectedShare": {
         "title": "Coming soon!",
         "desc": "Share anything by email with your family and friends!"
       },
       "close": "Close",
-      "loading": "Loading...",
-      "creatingLink": "Creating your link...",
+      "gettingLink": "Getting your link...",
       "error": {
         "generic": "An error occurred when creating the album share link, please try again."
       }
@@ -119,7 +136,8 @@
         "label": "Add a name to your new album",
         "placeholder": "Untitled album",
         "cancel": "Cancel",
-        "submit": "Create new album"
+        "submit": "Create new album",
+        "update": "Add photos to album"
       },
       "inline_form": {
         "placeholder": "New album name",
@@ -152,7 +170,10 @@
     }
   },
   "Viewer": {
-    "close": "Close"
+    "close": "Close",
+    "actions": {
+      "download" : "Download"
+    }
   },
   "destroyconfirmation": {
     "title": "Permanently delete this album?",
