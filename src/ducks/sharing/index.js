@@ -82,24 +82,32 @@ const fetchSharings = (ids) => Promise.all(ids.map(fetchSharing))
 export const deletePermission = (id) =>
   cozy.client.fetchJSON('DELETE', `/permissions/${id}`)
 
-const createRecipient = (email) => cozy.client.fetchJSON('POST', '/sharings/recipient', {
-  email
+const createContact = (email, url) => cozy.client.fetchJSON('POST', '/data/io.cozy.contacts/', {
+  cozy: [
+    {url}
+  ],
+  email: [
+    {
+      address: email,
+      primary: true
+    }
+  ]
 })
 
-const createSharing = (id, description, recipient, sharingType = 'master-slave') =>
+const createSharing = (docId, docName, targetId, sharingType = 'master-slave') =>
   cozy.client.fetchJSON('POST', '/sharings/', {
-    desc: description,
+    desc: docName,
     permissions: {
       album: {
         description: 'album',
         type: 'io.cozy.photos.albums',
-        values: [id]
+        values: [docId]
       },
       files: {
         description: 'photos',
         type: 'io.cozy.files',
         values: [
-          `io.cozy.photos.albums/${id}`
+          `io.cozy.photos.albums/${docId}`
         ],
         selector: 'referenced_by'
       }
@@ -107,7 +115,7 @@ const createSharing = (id, description, recipient, sharingType = 'master-slave')
     recipients: [
       {
         recipient: {
-          id: recipient._id,
+          id: targetId,
           type: 'io.cozy.contacts'
         }
       }
@@ -115,23 +123,36 @@ const createSharing = (id, description, recipient, sharingType = 'master-slave')
     sharing_type: sharingType
   })
 
-export const share = ({ _id, name }, email, sharingType) =>
-  createRecipient(email).then(
-    (recipient) => createSharing(_id, name, recipient, sharingType)
+const getContactId = ({email, url, id}) => id
+  ? Promise.resolve(id)
+  : createContact(email, url)
+
+export const share = (document, recipient, sharingType) =>
+  getContactId(recipient)
+  .then(
+    (id) => createSharing(document._id, document.name, id, sharingType)
   )
 
-export const getContacts = async (ids = []) => {
-  const response = await cozy.client.fetchJSON('GET', '/data/io.cozy.contacts/_all_docs?include_docs=true', {keys: ids})
-  return response.rows.map(row => row.doc)
+export const getContacts = (ids = []) => cozy.client.fetchJSON('GET', '/data/io.cozy.contacts/_all_docs?include_docs=true', {keys: ids})
+  .then(response =>
+    response.rows
+    .map(row => row.doc)
+    .filter(doc => Array.isArray(doc.email))
+  )
+
+const getPrimaryOrFirst = property => (obj) => {
+  if (!obj[property] || obj[property].length === 0) return ''
+
+  return obj[property].find(property => property.primary) || obj[property][0]
 }
+
+export const getEmail = (contact) => getPrimaryOrFirst('email')(contact).address
+export const getCozy = (contact) => getPrimaryOrFirst('cozy')(contact).url
 
 const getProperty = (property, comparator) => (list, id) => {
   const wantedItem = list.find(comparator(id)) || {}
   return wantedItem[property]
 }
-
-const getEmail = getProperty('email', id => item => item._id === id)
-const getUrl = getProperty('url', id => item => item._id === id)
 
 export const getRecipients = (id, type) => fetchSharedWithOthersPermissions([id], type, 'rule0')
   .then(perms => perms.map(perm => perm.attributes.source_id))
@@ -153,8 +174,8 @@ export const getRecipients = (id, type) => fetchSharedWithOthersPermissions([id]
     const contacts = await getContacts(ids)
     return recipients.map(recipient => ({
       ...recipient,
-      email: getEmail(contacts, recipient.id),
-      url: getUrl(contacts, recipient.id)
+      email: getProperty('email', id => item => item._id === id)(contacts, recipient.id),
+      url: getProperty('url', id => item => item._id === id)(contacts, recipient.id)
     }))
   })
 
