@@ -6,19 +6,38 @@ import { Link } from 'react-router'
 
 import classNames from 'classnames'
 
+const navigation = [
+  {
+    iconClass: 'pho-cat-photos',
+    labelKey: 'Nav.photos',
+    route: '/photos'
+  },
+  {
+    iconClass: 'pho-cat-albums',
+    labelKey: 'Nav.albums',
+    route: '/albums'
+  },
+  {
+    iconClass: 'pho-cat-sharedbyme',
+    labelKey: 'Nav.sharedbyme',
+    route: '/sharedbyme'
+  }
+]
+
+const NavItem = ({ t, iconClass, labelKey, route }) => (
+  <li className={styles['coz-nav-item']}>
+    <Link to={route} className={classNames(styles[iconClass], styles['coz-nav-link'])} activeClassName={styles['active']}>
+      { t(labelKey) }
+    </Link>
+  </li>
+)
+
 export const Nav = ({ t }) => (
   <nav>
     <ul className={styles['coz-nav']}>
-      <li className={styles['coz-nav-item']}>
-        <Link to='/photos' className={classNames(styles['pho-cat-photos'], styles['coz-nav-link'])} activeClassName={styles['active']}>
-          { t('Nav.photos') }
-        </Link>
-      </li>
-      <li className={styles['coz-nav-item']}>
-        <Link to='/albums' className={classNames(styles['pho-cat-albums'], styles['coz-nav-link'])} activeClassName={styles['active']}>
-          { t('Nav.albums') }
-        </Link>
-      </li>
+      {navigation.map(item => (
+        <NavItem t={t} {...item} />
+      ))}
     </ul>
   </nav>
 )
