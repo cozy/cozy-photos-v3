@@ -1,24 +1,19 @@
+# [deprecated] This repo has been merged in https://github.com/cozy/cozy-drive
 
 [![Travis build status shield](https://img.shields.io/travis/cozy/cozy-photos-v3.svg?branch=master)](https://travis-ci.org/cozy/cozy-photos-v3)
 [![NPM release version shield](https://img.shields.io/npm/v/cozy-photos-v3.svg)](https://www.npmjs.com/package/cozy-photos-v3)
 [![Github Release version shield](https://img.shields.io/github/tag/cozy/cozy-photos-v3.svg)](https://github.com/cozy/cozy-photos-v3/releases)
 [![NPM Licence shield](https://img.shields.io/npm/l/cozy-photos-v3.svg)](https://github.com/cozy/cozy-photos-v3/blob/master/LICENSE)
 
+# [Cozy] Photos
 
-[Cozy] Photos
-=======================
-
-
-What's Cozy?
-------------
+## What's Cozy?
 
 ![Cozy Logo](https://cdn.rawgit.com/cozy/cozy-guidelines/master/templates/cozy_logo_small.svg)
 
-[Cozy] is a platform that brings all your web services in the same private space.  With it, your webapps and your devices can share data easily, providing you with a new experience. You can install Cozy on your own hardware where no one's tracking you.
+[Cozy] is a platform that brings all your web services in the same private space. With it, your webapps and your devices can share data easily, providing you with a new experience. You can install Cozy on your own hardware where no one's tracking you.
 
-
-What's Photos?
-------------------
+## What's Photos?
 
 Cozy Photos make your photos and albums easy to manage. Main features are:
 
@@ -26,9 +21,7 @@ Cozy Photos make your photos and albums easy to manage. Main features are:
 * Albums
 * Photos sharing
 
-
-Hack
-----
+## Hack
 
 _:pushpin: Note:_ we recommend to use [Yarn] instead of NPM for package management. Don't hesitate to [install][yarn-install] and use it for your Cozy projects, it's now our main node packages tool for Cozy official apps.
 
@@ -57,7 +50,6 @@ $ yarn run watch:server
 
 and point your browser to http://localhost:8084.
 
-
 ### Run it inside the VM
 
 You can easily view your current running app, you can use the [cozy-stack docker image][cozy-stack-docker]:
@@ -76,7 +68,6 @@ $ yarn stack:docker
 ```
 
 your app is available at http://photos.cozy.tools:8080.
-
 
 #### Living on the edge
 
@@ -100,7 +91,6 @@ You can now run the watch task and your project will hot-reload each times a coz
 
 [Cozy-client-js] is our API library that provides an unified API on top of the cozy-stack. If you need to develop / hack cozy-client-js in parallel of your application, you can use the same trick that we used with [cozy-ui]: yarn linking.
 
-
 ### Tests
 
 Tests are run by [jest] using rendering features from [enzyme]. You can easily run the tests suite with:
@@ -112,20 +102,17 @@ $ yarn test
 
 You can also run the test in a watching mode by using `yarn run test -- --watch`.
 
-Components tests using jest work with snapshots, it allows to assert rendered components in an easier way. After a new feature, __only if you are sure that the new rendered component received from the test is correct__, use `yarn run test -- -u` to update obsolete snapshots.
+Components tests using jest work with snapshots, it allows to assert rendered components in an easier way. After a new feature, **only if you are sure that the new rendered component received from the test is correct**, use `yarn run test -- -u` to update obsolete snapshots.
 
-:warning: __Be careful when you update snapshots, if the rendered components are incorrect__, the related snapshots will be updated with incorrect components and the related __tests will used incorrect snapshots__. And we won't see tests errors about that.
+:warning: **Be careful when you update snapshots, if the rendered components are incorrect**, the related snapshots will be updated with incorrect components and the related **tests will used incorrect snapshots**. And we won't see tests errors about that.
 
 :pushpin: Don't forget to update / create new tests when you contribute to code to keep the app the consistent.
-
 
 ### Open a Pull-Request
 
 If you want to work on Photos and submit code modifications, feel free to open pull-requests! See the [contributing guide][contribute] for more information about how to properly open pull-requests.
 
-
-Community
----------
+## Community
 
 ### Localization
 
@@ -135,28 +122,22 @@ As a _translator_, you can login to [Transifex][tx-signin] (using your Github ac
 
 As a _developer_, you must [configure the transifex client][tx-client], and claim an access as _maintainer_ is the [app repository][tx-app]. Then please **only update** the source locale file (usually `en.json` in client and/or server parts), and push it to Transifex repository using the `tx push -s` command.
 
-
 ### Maintainer
 
 The lead maintainer for Cozy Photos is @goldoraf, send him/her a :beers: to say hello!
-
 
 ### Get in touch
 
 You can reach the Cozy Community by:
 
-- Chatting with us on IRC [#cozycloud on Freenode][freenode]
-- Posting on our [Forum][forum]
-- Posting issues on the [Github repos][github]
-- Say Hi! on [Twitter][twitter]
+* Chatting with us on IRC [#cozycloud on Freenode][freenode]
+* Posting on our [Forum][forum]
+* Posting issues on the [Github repos][github]
+* Say Hi! on [Twitter][twitter]
 
-
-License
--------
+## License
 
 Cozy Photos is developed by Cozy Cloud and distributed under the [AGPL v3 license][agpl-3.0].
-
-
 
 [cozy]: https://cozy.io "Cozy Cloud"
 [setup]: https://dev.cozy.io/#set-up-the-development-environment "Cozy dev docs: Set up the Development Environment"
